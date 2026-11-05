@@ -1,0 +1,16 @@
+name: "astrbot_plugin_keyword_wake"
+display_name: "关键词唤醒 (Keyword Wake)"
+author: "dsh"
+version: "v1.1.0"
+desc: "群里出现指定关键词时按概率接话：关键词匹配、概率、冷却都在模型之前完成，未命中零 token 消耗；自动忽略别的机器人。"
+repo: ""
+astrbot_version: ">=4.24.0"
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - qq_official_webhook
+tags:
+  - 关键词
+  - 唤醒
+  - 群聊
+  - 低消耗

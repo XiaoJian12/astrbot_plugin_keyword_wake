@@ -1,0 +1,32 @@
+{
+  "enabled": {
+    "type": "bool",
+    "description": "总开关",
+    "default": true
+  },
+  "keyword": {
+    "type": "string",
+    "description": "触发关键词（消息正文包含即命中，大小写不敏感）",
+    "default": "关键词"
+  },
+  "probability": {
+    "type": "float",
+    "description": "命中后真的接话的概率，0-1（0.5 = 一半）",
+    "default": 0.5
+  },
+  "cooldown_seconds": {
+    "type": "int",
+    "description": "同一个群的冷却时间（秒）",
+    "default": 30
+  },
+  "group_whitelist": {
+    "type": "list",
+    "description": "只在这些群号生效，留空表示所有群",
+    "default": []
+  },
+  "bot_ids": {
+    "type": "list",
+    "description": "要忽略的机器人 QQ 号（OneBot 通常不标记机器人，需要手动填）",
+    "default": []
+  }
+}
